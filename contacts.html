@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Team Contact Information</title>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes logoBounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eef2f3;
+            color: #2d3436;
+        }
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            padding: 10px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        .header {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            animation: fadeIn 1s ease-in-out 0.5s;
+            animation-fill-mode: both;
+        }
+        .logo {
+            width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .contact-method {
+            padding: 40px 20px;
+            border: 1px solid #0185fa;
+            border-radius: 5px;
+            background-color: #f9f9f8;
+            text-align: center;
+            transition: box-shadow 0.3s ease-in-out;
+            animation: fadeIn 1s ease-in-out;
+            height: 300px;
+        }
+        .contact-method:hover {
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-method h2 {
+            margin-top: 0;
+            color: #34495e;
+            font-size: 1.5rem;
+        }
+        .contact-method p {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+        .icon {
+            font-size: 2rem;
+            color: #3498db;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        .message-link {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 1rem;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .message-link:hover {
+            background-color: #1d6fa5;
+        }
+        .site-link {
+            margin-top: 10px;
+            display: inline-block;
+            padding: 10px 15px;
+            font-size: 1rem;
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .site-link:hover {
+            background-color: #1d6fa5;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Company Logo" class="logo">
+            <h1>HESU INVESTMENT LIMITED <BR> IT Team Contact Information</h1>
+        </div>
+        <div class="grid">
+            <div class="contact-method">
+                <i class="icon fas fa-ticket-alt"></i>
+                <h2>Ticketing System</h2>
+                <p>Services and support are facilitated through a ticketing system:</p>
+                <p><a href="http://www.Helpdesk.hesu.co.tz" target="_blank">www.Helpdesk.hesu.co.tz</a></p>
+                <p>Submit support requests and track resolutions efficiently.</p>
+                <a href="http://www.Helpdesk.hesu.co.tz" target="_blank" class="site-link">Visit this Site</a>
+            </div>
+            <div class="contact-method">
+                <i class="icon fas fa-envelope"></i>
+                <h2>Email</h2>
+                <p>For official communication, project updates, and formal announcements:</p>
+                <p><a href="mailto:itsupport@hesu.co.tz">itsupport@hesu.co.tz</a></p>
+                <a href="mailto:itsupport@hesu.co.tz" class="message-link">Send Email</a>
+            </div>
+            <div class="contact-method">
+                <i class="icon fas fa-phone"></i>
+                <h2>Phone Calls</h2>
+                <p>Contact the IT team directly for ICT services at:</p>
+                <p><a href="tel:+255741160063">+255 741 160 063</a></p>
+                <p><a href="sms:+255741160063" class="message-link">Send a Message</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
